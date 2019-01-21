@@ -1,2 +1,2 @@
-# e-commerce-app
-And e-commerce app with Spring-Boot and React
+# my-blog-app
+Example blog app with Spring-Boot and React
