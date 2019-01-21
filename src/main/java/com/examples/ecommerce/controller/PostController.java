@@ -31,7 +31,7 @@ public class PostController {
         return postRepository.save(post);
     }
 
-    @PutMapping("/posts/{postId}")
+    /*@PutMapping("/posts/{postId}")
     public Post updatePost(@PathVariable Long postId, @Valid @RequestBody Post postRequest) {
         return postRepository.findById(postId).map(post -> {
             post.setTitle(postRequest.getTitle());
@@ -48,5 +48,5 @@ public class PostController {
             postRepository.delete(post);
             return ResponseEntity.ok().build();
         }).orElseThrow(() -> new ResourceNotFoundException("PostId " + postId + " not found"));
-    }
+    }*/
 }

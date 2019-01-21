@@ -25,7 +25,7 @@ public class CommentController {
         this.postRepository = postRepository;
     }
 
-    @GetMapping("/posts/{postId}/comments")
+    /*@GetMapping("/posts/{postId}/comments")
     public Page<Comment> getAllCommentsByPostId(@PathVariable(value = "postId") Long postId,
                                                 Pageable pageable) {
         return commentRepository.findByPostId(postId, pageable);
@@ -65,5 +65,5 @@ public class CommentController {
             commentRepository.delete(comment);
             return ResponseEntity.ok().build();
         }).orElseThrow(() -> new ResourceNotFoundException("CommentId " + commentId + " not found"));
-    }
+    }*/
 }

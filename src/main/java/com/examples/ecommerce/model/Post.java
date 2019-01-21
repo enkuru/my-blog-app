@@ -1,5 +1,6 @@
 package com.examples.ecommerce.model;
 
+import com.examples.ecommerce.model.common.GenericModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -11,7 +12,7 @@ import javax.validation.constraints.Size;
 @Table(name = "posts")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class Post extends AuditModel {
+public class Post extends GenericModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

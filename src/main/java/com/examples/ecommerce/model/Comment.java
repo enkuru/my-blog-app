@@ -1,5 +1,6 @@
 package com.examples.ecommerce.model;
 
+import com.examples.ecommerce.model.common.GenericModel;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +14,7 @@ import javax.validation.constraints.NotNull;
 @Table(name = "comments")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class Comment extends AuditModel {
+public class Comment extends GenericModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
